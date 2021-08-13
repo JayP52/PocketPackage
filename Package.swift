@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "PocketPackage",
+    platforms: [.iOS(.v14)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -16,13 +17,8 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "PocketPackage",
-            dependencies: []),
-        .testTarget(
-            name: "PocketPackageTests",
-            dependencies: ["PocketPackage"]),
+        .binaryTarget(name: "PocketPackage",
+                      url: "https://github.com/JayP52/PocketKit/blob/main/PocketKit.xcframework.zip",
+                      checksum: "e8a88e2d2f7ebfdc420b04a9159202ba8623f30e6114808adcf24cc485a7da1d")
     ]
 )
