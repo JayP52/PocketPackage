@@ -18,7 +18,7 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "PocketPackage",
-                      url: "https://github.com/JayP52/PocketKit/blob/main/PocketKit.xcframework.zip",
+                      url: "https://github.com/JayP52/PocketXCFrameworkZIP/blob/main/PocketKit.xcframework.zip",
                       checksum: "e8a88e2d2f7ebfdc420b04a9159202ba8623f30e6114808adcf24cc485a7da1d")
     ]
 )
