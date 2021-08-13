@@ -1,3 +1,3 @@
 # PocketPackage
 
-A description of this package.
+A new description of this package.
